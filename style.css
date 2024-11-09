@@ -1,12 +1,17 @@
 .header {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.925);
 }
 
-.main {
+.body {
+    margin-top: 0px;
     background-color: rgba(47, 47, 47, 0.925);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.925);
 }
 
 .text-logo {
@@ -21,4 +26,12 @@
     font-size: 20px;
     font-weight: 400;
     color: white;
+}
+
+.promo-picture {
+    width: 900px;
+    height: 500px;
+    background-size: 1000px auto;
+    background-repeat: no-repeat;
+    background-image: url('./images/promo-picture.jpg');
 }
