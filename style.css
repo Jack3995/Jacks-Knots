@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+.main {
+    background-color: rgba(47, 47, 47, 0.925);
+}
+
+.text-logo {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.header__menu-item {
+    /* vertical-align: middle; */
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
