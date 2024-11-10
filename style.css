@@ -1,18 +1,17 @@
 /* === Глобальные настройки ======================================================= */
 html {
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
 }
 
 .body {
-    margin-top: 0px;
+    /* margin-top: 0px; */
+    margin: 0;
     background-color: rgba(27, 27, 27, 0.979);
 }
 
-.footer {
-    width: auto;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.596);
-}
+
 
 /* === Меню ======================================================================== */
 .header {
@@ -24,11 +23,13 @@ html {
     background-color: rgba(0, 0, 0, 0.596);
 }
 
-.text-logo {
-    font-size: 25px;
-    font-weight: 400;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+.logo {
+    width: 300px;
+    height: 50px;
+    background-image: url('./images/logo-transparent.png');
+    background-size: 170px auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header__menu-item {
@@ -39,56 +40,60 @@ html {
     font-size: 15px;
     font-weight: 100;
     color: white;
-    padding: 16px;
+    font-family: monospace;
 }
 
-/* === Промо-изображение ============================================================ */
+/* === Промо-секция ================================================================= */
 .promo-section__picture {
     display: block;
-    width: 2000px;
-    height: 1000px;
-    background-size: 2000px auto;
+    width: 100%;
+    height: 1100px;
+    background-size: 2200px auto;
     background-repeat: no-repeat;
     background-image: url('./images/promo-picture.jpg');
+    background-position: center;
 }
 
-.promo-section__text {
+.promo-section__title {
     text-align: center;
     font-size: 100px;
     font-weight: 600;
     color: white;
+    padding-top: 15%;
+    -webkit-text-stroke: 1px #000000;
 }
 
 /* === Промо-категории =============================================================== */
 .promo-category {
-    margin: 50px 50px 50px 50px;
-    padding: 0;
     display: grid;
+    margin: 400px 50px 400px 50px;
+    padding: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 11fr 1fr;
     gap: 20px 10px;
+    min-height: fit-content;
 }
 
-.promo-category__picture-1,
-.promo-category__picture-2,
-.promo-category__picture-3 {
+.promo-category__picture {
     width: 100%;
-    height: 500px;
-    background-size: 500px auto;
+    height: 100%;
+    /* min-height: 150%; */
+    /* max-height: 500px; */
+    background-size: 500px 500px; 
     background-repeat: no-repeat;
-    /* text-align: center; */
+    background-position: center;
 }
 
-.promo-category__picture-1 {
-    background-image: url('./images/promo-bracelets__picture_1.jpg');
+.promo-category__picture_bracelets {
+    background-image: url('./images/promo-category__bracelets.jpg');
 }
 
-.promo-category__picture-2 {
+.promo-category__picture_lanyard {
     background-image: url('./images/promo-bracelets__picture_2.jpg');
 }
 
-.promo-category__picture-3 {
-    background-image: url('./images/promo-bracelets__picture_3.jpg');
+.promo-category__picture_keychain {
+    background-image: url('./images/promo-category__keychains.jpg');
 }
 
 .promo-category__category-name {
@@ -98,7 +103,127 @@ html {
     color: white;
 }
 
-/* === Футер ============================================================ */
+/* === О паракорде ===================================================================== */
+.paracord-section__picture {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    background-size: 2200px auto;
+    background-repeat: no-repeat;
+    background-image: url('./images/paracord.jpg');
+    background-position: center;
+}
+
+.paracord-section__title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10%;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.paracord-section__text {
+    width: 1500px;
+    /* height: 100px; */
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20%;
+    -webkit-text-stroke: 1px #000000;
+    background-color: rgba(27, 27, 27, 0.336);
+}
+
+/* === Портфолио / Мои работы ============================================================ */
+.portfolio {
+    display: grid;
+    margin: 200px 50px 200px 50px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    min-height: fit-content;
+    /* background-position: center; */
+
+}
+
+.portfolio__picture {
+    width: 500px;
+    height: 500px;
+    /* max-height: 500px; */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio__picture_pic-1 {
+    background-image: url('./images/IMG_20190916_151129.jpg');
+    background-position: center;
+}
+
+.portfolio__picture_pic-2 {
+    background-image: url('./images/IMG_20190612_140619.jpg');
+}
+
+.portfolio__picture_pic-3 {
+    background-image: url('./images/IMG_20190731_173002.jpg');
+}
+
+.portfolio__picture_pic-4 {
+    background-image: url('./images/IMG_20190612_134558.jpg');
+}
+
+.portfolio__picture_pic-5 {
+    background-image: url('./images/IMG_20190612_202749.jpg');
+}
+
+.portfolio__picture_pic-6 {
+    background-image: url('./images/IMG_20190806_143113.jpg');
+}
+
+.portfolio__picture_pic-7 {
+    background-image: url('./images/IMG_20160625_155031.jpg');
+}
+
+.portfolio__picture_pic-8 {
+    background-image: url('./images/IMG_20190806_143113.jpg');
+}
+
+.portfolio__picture_pic-9 {
+    background-image: url('./images/IMG_20190806_143113.jpg');
+}
+
+/* === Подвал ===================================================================== */
+.footer {
+    width: auto;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.links {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.logo-vk {
+    width: 100px;
+    height: 100px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./images/logo-vk.png');
+}
+
+.logo-inst {
+    width: 100px;
+    height: 100px;
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./images/logo-inst.png');
+}
+
 .copyright {
     position: relative;
     top: 90%;
