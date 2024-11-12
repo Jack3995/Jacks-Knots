@@ -41,6 +41,13 @@ html {
     font-weight: 100;
     color: white;
     font-family: monospace;
+    text-decoration: none;
+}
+
+.header__menu-item:hover {
+    /* text-decoration: underline;  */
+    color: red;
+
 }
 
 /* === Промо-секция ================================================================= */
@@ -66,10 +73,11 @@ html {
 /* === Промо-категории =============================================================== */
 .promo-category {
     display: grid;
-    margin: 400px 50px 400px 50px;
+    /* margin: 400px 50px 400px 50px; */
+    margin: 100px auto 400px auto;
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 11fr 1fr;
+    grid-template-rows: 17fr 1fr;
     gap: 20px 10px;
     min-height: fit-content;
 }
@@ -79,7 +87,7 @@ html {
     height: 100%;
     /* min-height: 150%; */
     /* max-height: 500px; */
-    background-size: 500px 500px; 
+    background-size: 500px 500px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -98,7 +106,7 @@ html {
 
 .promo-category__category-name {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     color: white;
 }
@@ -125,7 +133,6 @@ html {
 
 .paracord-section__text {
     width: 1500px;
-    /* height: 100px; */
     text-align: left;
     font-size: 50px;
     font-weight: 600;
@@ -138,23 +145,25 @@ html {
 /* === Портфолио / Мои работы ============================================================ */
 .portfolio {
     display: grid;
-    margin: 200px 50px 200px 50px;
+    margin: 200px auto 200px auto;
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px 30px;
-    min-height: fit-content;
-    /* background-position: center; */
+}
 
+.portfolio__title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+    padding-top: 20%;
 }
 
 .portfolio__picture {
-    width: 500px;
     height: 500px;
-    /* max-height: 500px; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .portfolio__picture_pic-1 {
@@ -191,19 +200,47 @@ html {
 }
 
 .portfolio__picture_pic-9 {
-    background-image: url('./images/IMG_20190806_143113.jpg');
+    background-image: url('./images/IMG_20190809_103614.jpg');
+}
+
+/* === Заказ ============================================================ */
+.order-section__title{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.order-section__subtitle {
+    padding-left: 20%; 
+    font-size: 30px;
+    font-weight: 600;
+    color: white; 
 }
 
 /* === Подвал ===================================================================== */
 .footer {
+    display: block;
+    text-align: center;
     width: auto;
-    height: 500px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.596);
 }
 
 .links {
     display: inline-flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.links__title {
+    padding-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Arial';
 }
 
 .logo-vk {
@@ -225,9 +262,6 @@ html {
 }
 
 .copyright {
-    position: relative;
-    top: 90%;
-    left: 5%;
     font-size: 15px;
     font-weight: 400;
     color: white;

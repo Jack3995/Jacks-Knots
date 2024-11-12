@@ -17,11 +17,10 @@
 
     <header class="header">
         <div class="logo"></div>
-        <p class="header__menu-item">ПАРАКОРД</p>
-        <p class="header__menu-item">МОИ РАБОТЫ</p>
-        <p class="header__menu-item">КАК ЗАКАЗАТЬ</p>
-        <p class="header__menu-item">СВЯЗЬ</p>
-        <p class="header__menu-item">ПРОЧЕЕ</p>
+        <a href="#paracord" class="header__menu-item">ПАРАКОРД</a>
+        <a href="#portfolio" class="header__menu-item">МОИ РАБОТЫ</a>
+        <a href="#order" class="header__menu-item">КАК ЗАКАЗАТЬ</a>
+        <a href="#links" class="header__menu-item">СВЯЗЬ</a>
     </header>
 
     <main class="main">
@@ -30,7 +29,6 @@
                 <div class="promo-section__title">ПОДЧЕРКНИ СВОЙ СТИЛЬ</div>
             </div>
         </section>
-
         <section class="promo-category">
             <div class="promo-category__picture promo-category__picture_bracelets"></div>
             <div class="promo-category__picture promo-category__picture_lanyard"></div>
@@ -41,24 +39,37 @@
         </section>
         <section class="paracord-section"></section>
         <div class="paracord-section__picture">
-            <div class="paracord-section__title">П А Р А К О Р Д</div>
+            <div id="paracord" class="paracord-section__title">П А Р А К О Р Д</div>
             <div class="paracord-section__text"></div>
         </div>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="portfolio__picture portfolio__picture_pic-1"></div>
             <div class="portfolio__picture portfolio__picture_pic-2"></div>
             <div class="portfolio__picture portfolio__picture_pic-3"></div>
             <div class="portfolio__picture portfolio__picture_pic-4"></div>
+            <div class="portfolio__title">МОИ РАБОТЫ</div>
             <div class="portfolio__picture portfolio__picture_pic-5"></div>
             <div class="portfolio__picture portfolio__picture_pic-6"></div>
             <div class="portfolio__picture portfolio__picture_pic-7"></div>
             <div class="portfolio__picture portfolio__picture_pic-8"></div>
-            <div class="portfolio__picture portfolio__picture_pic-9"></div>
+        </section>
+        <section id="order" class="order-section">
+                <div class="order-section__title">СДЕЛАТЬ ЗАКАЗ</div>
+                <div class="order-section__subtitle">1. Выберите плетение:</div>
+                <div class="order-section__picture"></div>
+                <div class="order-section__subtitle">2. Выберите цвет паракорда:</div>
+                <div class="order-section__picture"></div>
+                <div class="order-section__subtitle">3. Выберите застёжку:</div>
+                <div class="order-section__picture"></div>
+                <div class="order-section__subtitle">4. Сделайте замер запястья:</div>
+                <div class="order-section__picture"></div>
+            <!-- <div class="portfolio__picture portfolio__picture_pic-1"></div> -->
         </section>
     </main>
 
     <footer class="footer">
-        <section class="links">
+        <p class="links__title">Увидимся в соцсетях:</p>
+        <section id="links" class="links">
             <a href="https://vk.com/jacksknots">
                 <div class="logo-vk"></div>
             </a>
@@ -67,6 +78,7 @@
             </a>
         </section>
         <p class="copyright">© Игорь Олифер</p>
+
     </footer>
 
     <script src="./script.js"></script>
